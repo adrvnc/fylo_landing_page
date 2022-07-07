@@ -281,9 +281,9 @@ input[type=checkbox]{
 
 .email-signup {
     background-color: hsl(217, 28%, 15%);
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     padding: 50px;
-    width: 60%;
 }
 
 .email-signup-header {
@@ -302,7 +302,6 @@ input[type=checkbox]{
 
 .email-form {
     display: flex;
-    justify-content: space-evenly;
     margin-top: 20px;
     text-align: center;
 }
@@ -311,7 +310,7 @@ form input {
     border-radius: 30px;
     border: none;
     padding:15px;
-    width: 60%;
+ 
 }
 
 input[type=submit] {
@@ -321,7 +320,6 @@ input[type=submit] {
     color:white;
     cursor: pointer;
     font-weight: bold;
-    width: 25%;
 }
 
 .email-zoom {
@@ -374,25 +372,88 @@ input[type=submit] {
     width: 100%;
   }
 
+  /* EMAIL SIGN-UP */
+    .email-form {
+        flex-direction: column;
+    }
+
+    .email-signup {
+        width: 90%;
+    }
+
+    form input, input[type=submit] {
+        width: 100%;
+    }
+
+    input[type=submit] {
+        margin-top: 20px;
+    }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    
+    /* FEATURE SECTION */
     .column {
     width: 100%;
   }
+
+   /* EMAIL SIGN-UP */
+     .email-signup {
+        width: 90%;
+    }
+
+    .email-form {
+        flex-direction: column;
+    }
+
+    form input, input[type=submit] {
+        width: 100%;
+    }
+
+    input[type=submit] {
+        margin-top: 20px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
+@media only screen and (min-width: 768px) {
+     
+     /* EMAIL SIGN-UP */
+     .email-signup {
+        width: 70%;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {...}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    
     /* FEATURE SECTION */ 
     .column {
-    width: 50%;
-  }
+        width: 50%;
+    }
+
+  /* EMAIL SIGN-UP */
+    .email-signup {
+        width: 60%;
+    }
+
+     .email-form {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    form input {
+        width: 60%;
+    }
+
+    input[type=submit] {
+        margin-top: 0;
+        width: 25%;
+    }
+
 }
