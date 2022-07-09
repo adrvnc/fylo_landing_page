@@ -161,23 +161,14 @@ input[type=checkbox]{
 
 /* STAY PRODUCTIVE SECTION */
 .stay-productive-section{
+  display: flex;
   max-width: 1250px;
   margin: auto;
   margin-top: 130px;
 }
 
-.stay-productive-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
 .stay-productive-column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
+    flex: 50%;
 }
 
 .stay-productive-text {
@@ -372,6 +363,11 @@ input[type=submit] {
     width: 100%;
   }
 
+  /* STAY PRODUCTIVE SECTION */
+    .stay-productive-section{
+      flex-direction: column;
+    }
+
   /* EMAIL SIGN-UP */
     .email-form {
         flex-direction: column;
@@ -420,6 +416,15 @@ input[type=submit] {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
      
+    /* STAY PRODUCTIVE SECTION */
+    .stay-productive-section{
+      flex-direction: column;
+    }
+
+    .stay-productive-image {
+        max-width: 100%;
+    }
+
      /* EMAIL SIGN-UP */
      .email-signup {
         width: 70%;
@@ -436,6 +441,18 @@ input[type=submit] {
     .column {
         width: 50%;
     }
+
+
+    /* STAY PRODUCTIVE SECTION */
+    .stay-productive-section{
+      flex-direction: row;
+    }
+
+
+    .stay-productive-image {
+        max-width: none;
+    }
+
 
   /* EMAIL SIGN-UP */
     .email-signup {
