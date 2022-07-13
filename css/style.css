@@ -332,13 +332,13 @@ input[type=submit] {
     
     /* NAVBAR MENU */
     .menu { 
-     background-color:hsl(218, 28%, 13%);
-     display:none;
-     left: 0;
-     padding: 16px 0;
-     position: absolute;
-     right: 0;
-     text-align: center;
+        background-color:hsl(218, 28%, 13%);
+        display:none;
+        left: 0;
+        padding: 16px 0;
+        position: absolute;
+        right: 0;
+        text-align: center;
     }
 
     .menu li a:hover {
@@ -360,12 +360,12 @@ input[type=submit] {
 
     /* FEATURE SECTION */
     .column {
-    width: 100%;
-  }
+        width: 100%;
+    }
 
-  /* STAY PRODUCTIVE SECTION */
+    /* STAY PRODUCTIVE SECTION */
     .stay-productive-section{
-      flex-direction: column;
+        flex-direction: column;
     }
 
     .stay-productive-header {
@@ -374,16 +374,16 @@ input[type=submit] {
 
     .stay-productive-paragraph {
         line-height: 1.6;
-        width: 330px;
-    }
-
-
-     .stay-productive-image {
         max-width: 100%;
     }
 
 
-  /* EMAIL SIGN-UP */
+    .stay-productive-image {
+        margin-left: 75px;
+    }
+
+
+    /* EMAIL SIGN-UP */
     .email-form {
         flex-direction: column;
     }
@@ -407,19 +407,29 @@ input[type=submit] {
     
     /* FEATURE SECTION */
     .column {
-    width: 100%;
-  }
-
-   /* STAY PRODUCTIVE SECTION */
-    .stay-productive-section{
-      flex-direction: column;
+         width: 100%;
     }
 
-    .stay-productive-image {
+    /* STAY PRODUCTIVE SECTION */
+    .stay-productive-section{
+        flex-direction: column;
+    }
+
+    .stay-productive-header {
+        font-size: 18px;
+    }
+
+
+    .stay-productive-paragraph {
+        line-height: 1.6;
         max-width: 100%;
     }
 
-   /* EMAIL SIGN-UP */
+    .stay-productive-image {
+        margin-left: 75px;
+    }
+
+    /* EMAIL SIGN-UP */
      .email-signup {
         width: 90%;
     }
@@ -441,6 +451,29 @@ input[type=submit] {
 @media only screen and (min-width: 768px) {
     
 
+    /* STAY PRODUCTIVE SECTION */
+    .stay-productive-header {
+        font-size: 22px;
+        margin: auto;
+    }
+
+
+    .stay-productive-paragraph {
+        margin: auto;
+        margin-top: 10px;
+        width: 500px;
+    }
+
+
+    .stay-productive-image {
+        text-align: center;
+    }
+
+    .see-how-fylo-works {
+        text-align: center;
+    }
+
+
      /* EMAIL SIGN-UP */
      .email-signup {
         width: 70%;
@@ -448,7 +481,24 @@ input[type=submit] {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
+@media only screen and (min-width: 992px) {
+     /* STAY PRODUCTIVE SECTION */
+     .stay-productive-header {
+        font-size: 30px;
+        margin: auto;
+        width: 500px;
+    }
+
+    .stay-productive-paragraph {
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .see-how-fylo-works {
+       text-align: center;
+    }
+
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -461,7 +511,17 @@ input[type=submit] {
 
     /* STAY PRODUCTIVE SECTION */
     .stay-productive-section{
-      flex-direction: row;
+        flex-direction: row;
+    }
+
+    .stay-productive-header {
+        font-size: 32px;
+        margin: 0;
+        width: 375px;
+    }
+
+     .stay-productive-paragraph {
+       width: 575px;
     }
 
 
@@ -469,8 +529,12 @@ input[type=submit] {
         max-width: none;
     }
 
+     .see-how-fylo-works {
+        text-align: left;
+    }
 
-  /* EMAIL SIGN-UP */
+
+    /* EMAIL SIGN-UP */
     .email-signup {
         width: 60%;
     }
