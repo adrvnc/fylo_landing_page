@@ -138,26 +138,16 @@ input[type=checkbox]{
     text-align: center;
 }
 
-.feature-header, .feature-paragraph {
+.feature-header, .feature-paragraph, .security-paragraph, .collab-paragraph {
     color: white;
     margin: auto;
     margin-top: 10px;
-    width: 400px;
 }
 
-.security-paragraph {
-    color: white;
-    margin: auto;
-    margin-top: 10px;
-    width: 440px;
+.feature-paragraph, .security-paragraph, .collab-paragraph {
+    text-align: center;
 }
 
-.collab-paragraph {
-    color: white;
-    margin: auto;
-    margin-top: 10px;
-    width: 420px;
-}
 
 /* STAY PRODUCTIVE SECTION */
 .stay-productive-section{
@@ -363,6 +353,10 @@ input[type=submit] {
         width: 100%;
     }
 
+    .feature-paragraph, .security-paragraph, .collab-paragraph {
+        max-width: 90%;
+    }
+
     /* STAY PRODUCTIVE SECTION */
     .stay-productive-section{
         flex-direction: column;
@@ -374,7 +368,7 @@ input[type=submit] {
 
     .stay-productive-paragraph {
         line-height: 1.6;
-        max-width: 100%;
+        max-width: 90%;
     }
 
 
@@ -409,6 +403,12 @@ input[type=submit] {
     .column {
          width: 100%;
     }
+
+
+    .feature-paragraph, .security-paragraph, .collab-paragraph {
+        max-width: 60%;
+    }
+
 
     /* STAY PRODUCTIVE SECTION */
     .stay-productive-section{
@@ -449,7 +449,12 @@ input[type=submit] {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    
+     
+     /* FEATURE SECTION */
+     .feature-paragraph, .security-paragraph, .collab-paragraph {
+        max-width: 430px;
+    }
+
 
     /* STAY PRODUCTIVE SECTION */
     .stay-productive-header {
@@ -482,6 +487,7 @@ input[type=submit] {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    
      /* STAY PRODUCTIVE SECTION */
      .stay-productive-header {
         font-size: 30px;
@@ -507,7 +513,6 @@ input[type=submit] {
     .column {
         width: 50%;
     }
-
 
     /* STAY PRODUCTIVE SECTION */
     .stay-productive-section{
