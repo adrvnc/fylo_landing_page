@@ -19,11 +19,6 @@ li {
     list-style: none;
 }
 
-img {
-    height:auto;
-    max-width:100%;
-}
-
 
 /* NAVBAR STYLING STARTS */
 .navbar {
@@ -75,6 +70,11 @@ input[type=checkbox]{
     text-align: center;
 }
 
+.illustration-img {
+    height: auto;
+    max-width: 90%;
+}
+
 .intro-text {
     color: white;
     font-family: 'Raleway', sans-serif;
@@ -86,9 +86,9 @@ input[type=checkbox]{
 
 .intro-paragraph {
     color: hsl(0, 0%, 100%);
-    max-width: 500px;
     margin: auto;
     margin-top: 25px;
+    text-align: center;
 }
 
 .intro-btn {
@@ -114,10 +114,6 @@ input[type=checkbox]{
 }
 
 /* FEATURE SECTION */
-.wrapper {
-    margin-top: 75px;
-}
-
 .container {
     max-width: 1250px;
     margin: auto;
@@ -159,6 +155,15 @@ input[type=checkbox]{
 
 .stay-productive-column {
     flex: 50%;
+}
+
+.img-div {
+    text-align: center;
+}
+
+.stay-productive-image {
+   height: auto;
+   max-width: 90%;
 }
 
 .stay-productive-text {
@@ -348,7 +353,16 @@ input[type=submit] {
         display: block;
     }
 
+    /*INTRODUCTION*/
+    .intro-paragraph {
+        max-width: 85%;
+    }
+
     /* FEATURE SECTION */
+    .wrapper {
+        margin-top: 50px;
+    }
+
     .column {
         width: 100%;
     }
@@ -370,12 +384,6 @@ input[type=submit] {
         line-height: 1.6;
         max-width: 90%;
     }
-
-
-    .stay-productive-image {
-        margin-left: 75px;
-    }
-
 
     /* EMAIL SIGN-UP */
     .email-form {
@@ -399,16 +407,23 @@ input[type=submit] {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     
+    /*INTRODUCTION*/
+    .intro-paragraph {
+        max-width: 75%;
+    }
+
     /* FEATURE SECTION */
+    .wrapper {
+        margin-top: 50px;
+    }
+
     .column {
          width: 100%;
     }
 
-
-    .feature-paragraph, .security-paragraph, .collab-paragraph {
+     .feature-paragraph, .security-paragraph, .collab-paragraph {
         max-width: 60%;
     }
-
 
     /* STAY PRODUCTIVE SECTION */
     .stay-productive-section{
@@ -419,14 +434,9 @@ input[type=submit] {
         font-size: 18px;
     }
 
-
     .stay-productive-paragraph {
         line-height: 1.6;
         max-width: 100%;
-    }
-
-    .stay-productive-image {
-        margin-left: 75px;
     }
 
     /* EMAIL SIGN-UP */
@@ -450,11 +460,15 @@ input[type=submit] {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
      
+    /*INTRODUCTION*/
+    .intro-paragraph {
+        max-width: 55%;
+    }
+
      /* FEATURE SECTION */
      .feature-paragraph, .security-paragraph, .collab-paragraph {
         max-width: 430px;
     }
-
 
     /* STAY PRODUCTIVE SECTION */
     .stay-productive-header {
@@ -462,22 +476,15 @@ input[type=submit] {
         margin: auto;
     }
 
-
     .stay-productive-paragraph {
         margin: auto;
         margin-top: 10px;
         width: 500px;
     }
 
-
-    .stay-productive-image {
-        text-align: center;
-    }
-
     .see-how-fylo-works {
         text-align: center;
     }
-
 
      /* EMAIL SIGN-UP */
      .email-signup {
@@ -488,6 +495,11 @@ input[type=submit] {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     
+    /*INTRODUCTION*/
+    .intro-paragraph {
+        max-width: 35%;
+    }
+
      /* STAY PRODUCTIVE SECTION */
      .stay-productive-header {
         font-size: 30px;
@@ -510,6 +522,10 @@ input[type=submit] {
 @media only screen and (min-width: 1200px) {
     
     /* FEATURE SECTION */ 
+    .wrapper {
+        margin-top: 75px;
+    }
+
     .column {
         width: 50%;
     }
@@ -528,7 +544,6 @@ input[type=submit] {
      .stay-productive-paragraph {
        width: 575px;
     }
-
 
     .stay-productive-image {
         max-width: none;
