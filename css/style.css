@@ -326,37 +326,20 @@ footer {
     padding-top: 200px;
 }
 
-.footer-column {
-  float: left;
-  width: 15%;
-}
-
-.row:after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-.footer-location {
-    margin-right: 200px;
-}
-
 .footer-paragraph {
     line-height: 1.4;
-    margin-top: 25px;
-    width: 360px;
 }
 
 .footer-img {
     margin-right: 20px;
 }
 
-.contact-margin {
-    margin-right: 100px;
+ul a {
+    color: white;
 }
 
-.footer-link {
-    margin-top: 80px;
+ul a:hover {
+    color: hsl(176, 68%, 64%);
 }
 
 li {
@@ -381,15 +364,14 @@ li {
     width: 30px;
 }
 
+
 .social-icons a:hover i {
-    color: hsl(176, 68%, 64%) !important;
+    color: hsl(176, 68%, 64%);
 }
 
  .social-icons a:hover  {
-    border-color: hsl(176, 68%, 64%) !important;
+    border-color: hsl(176, 68%, 64%);
 }
-
-
 
 /* APPLYING MEDIA QUERIES */
 /* Extra small devices (phones, 600px and down) */
@@ -475,10 +457,6 @@ li {
 
 
     /* FOOTER */
-    footer {
-        text-align: center;
-    }
-
     .footer-logo {
         display: block;
         margin-left: 30px;
@@ -488,10 +466,11 @@ li {
     .footer-paragraph {
         text-align: left;
         margin-left: 30px;
+        margin-top: 40px;
         max-width: 75%;
     }
 
-    .contact-margin { 
+    .contact-margin {
         margin-top: 10px;
      }
 
@@ -563,9 +542,36 @@ li {
     }
 
      /* FOOTER */
-    footer {
-        text-align: center;
+    .footer-logo {
+        display: block;
+        margin-left: 30px;
+        margin-right: auto;
     }
+
+    .footer-column {
+         width: 100%;
+     }
+
+    .footer-paragraph {
+        text-align: left;
+        margin-left: 30px;
+        margin-top: 40px;
+        width: 75%;
+    }
+
+    .contact-margin { 
+        margin-top: 10px;
+     }
+
+    .footer-link {
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    .footer-link-margin {
+        margin-top: 40px;
+     }
+  
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -600,6 +606,11 @@ li {
      /* EMAIL SIGN-UP */
      .email-signup {
         width: 70%;
+    }
+
+    /* FOOTER */ 
+    .footer-paragraph {
+        width: 35%;
     }
 }
 
@@ -684,9 +695,44 @@ li {
         width: 25%;
     }
 
-     /* FOOTER */
-    footer {
-        text-align: left;
+    /* FOOTER */
+    .footer-logo {
+        display: initial;
+        margin-left: initial;
+        margin-right: initial;
+    }
+
+    .footer-column {
+      float: left;
+      width: 15%;
+    }
+
+    .row:after {
+      clear: both;
+      content: "";
+      display: table;
+    }
+
+    .footer-location {
+        margin-right: 200px;
+    }
+
+    .footer-paragraph {
+        text-align: initial;
+        margin-left: initial;
+        margin-top: 25px;
+        width: 360px;
+    }
+
+    .contact-margin {
+        margin-top: initial;
+        margin-right: 100px;
+    }
+
+    .footer-link {
+        text-align: initial;
+        margin-left: initial;
+        margin-top: 80px;
     }
 
 }
