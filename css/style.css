@@ -323,11 +323,13 @@ input[type=submit] {
 footer {
     background-color: hsl(216, 53%, 9%);
     color: white;
-    padding-top: 200px;
+    padding: 200px 0 150px;
 }
 
 .footer-paragraph {
     line-height: 1.4;
+    padding-left: 33px;
+    text-indent: -33px;
 }
 
 .footer-img {
@@ -455,13 +457,16 @@ li {
         margin-top: 20px;
     }
 
-
     /* FOOTER */
     .footer-logo {
         display: block;
         margin-left: 30px;
         margin-right: auto;
     }
+
+    .footer-column {
+         width: 100%;
+     }
 
     .footer-paragraph {
         text-align: left;
@@ -474,10 +479,6 @@ li {
         margin-top: 10px;
      }
 
-    .footer-column {
-         width: 100%;
-     }
-
     .footer-link {
         text-align: left;
         margin-left: 30px;
@@ -486,7 +487,6 @@ li {
     .footer-link-margin {
         margin-top: 40px;
      }
-
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -570,8 +570,7 @@ li {
 
     .footer-link-margin {
         margin-top: 40px;
-     }
-  
+     } 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -731,7 +730,7 @@ li {
 
     .footer-link {
         text-align: initial;
-        margin-left: initial;
+        margin-left: 13px;
         margin-top: 80px;
     }
 
