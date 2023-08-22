@@ -37,7 +37,7 @@ Users should be able to:
 ### Built with
 - HTML
 - CSS
-- 
+
 ### Useful resources
 
 - [Column Layout](https://www.w3schools.com/howto/howto_css_four_columns.asp) - This helped me create a responsive four-column layout grid. The same principle can be applied to different grid layouts. 
