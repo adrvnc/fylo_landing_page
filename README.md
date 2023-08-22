@@ -12,8 +12,6 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
   
 ## Overview
@@ -39,18 +37,7 @@ Users should be able to:
 ### Built with
 - HTML
 - CSS
-
-### What I learned
-
-Instead of using bootstrap, I learned how to make an entire landing 
-page responsive using CSS media queries. 
-
-### Continued development
-
-This project is the first I've completed without using any framework. I 
-used this opportunity to learn the fundamentals and will continue
-to do so. 
-
+- 
 ### Useful resources
 
 - [Column Layout](https://www.w3schools.com/howto/howto_css_four_columns.asp) - This helped me create a responsive four-column layout grid. The same principle can be applied to different grid layouts. 
